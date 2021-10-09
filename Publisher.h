@@ -4,16 +4,16 @@ class Publisher :
     public Book
 {
 public:
-    Publisher(void);//конструктор без параметров 
+    Publisher(void);//РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ Р±РµР· РїР°СЂР°РјРµС‚СЂРѕРІ 
 public:
-    string pub;//атрибут грузоподъемность
-    ~Publisher(void);//деструктор 
-    Publisher(string,string,int,string);//конструктор с параметрами
-    Publisher(const Publisher&);//конструктор копирования 
-    string Get_pub(){return pub;}//модификатор
-    void Set_pub(string);//селектор
-    Publisher& operator=(const Publisher&);//операция присваивания
-    friend istream& operator>>(istream& in, Publisher& l);//операция ввода
-    friend ostream& operator<<(ostream& out, const Publisher& l); //операция вывода protected:
+    ~Publisher(void);//РґРµСЃС‚СЂСѓРєС‚РѕСЂ 
+    Publisher(string,string,int,string);//РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ СЃ РїР°СЂР°РјРµС‚СЂР°РјРё
+    Publisher(const Publisher&);//РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РєРѕРїРёСЂРѕРІР°РЅРёСЏ 
+    string Get_pub(){return pub;}//РјРѕРґРёС„РёРєР°С‚РѕСЂ
+    void Set_pub(string);//СЃРµР»РµРєС‚РѕСЂ
+    Publisher& operator=(const Publisher&);//РѕРїРµСЂР°С†РёСЏ РїСЂРёСЃРІР°РёРІР°РЅРёСЏ
+    friend istream& operator>>(istream& in, Publisher& l);//РѕРїРµСЂР°С†РёСЏ РІРІРѕРґР°
+    friend ostream& operator<<(ostream& out, const Publisher& l); //РѕРїРµСЂР°С†РёСЏ РІС‹РІРѕРґР° 
+protected:
+    string pub;
 };
-
